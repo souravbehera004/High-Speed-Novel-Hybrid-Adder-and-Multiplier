@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../multiplier.srcs/sources_1/new/adder16_hybrid.v" \
+"../../../../multiplier.srcs/sources_1/new/cla_4bit.v" \
+"../../../../multiplier.srcs/sources_1/new/hybrid_adder.v" \
+"../../../../multiplier.srcs/sources_1/new/kogge_4bit.v" \
+"../../../../multiplier.srcs/sources_1/new/multiplier_8bit.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
